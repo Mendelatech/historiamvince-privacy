@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HISTORIAM VINCE — Privacy Policy</title>
+<link rel="icon" href="historiamvince-logo.png">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-top: 0; }
+  a { color: #1F3A7A; }
+  footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+  select#langSelect { font-size: 0.95rem; padding: 6px 10px; border-radius: 6px; border: 1px solid #ccc; background: #fff; }
+  .lang-block[hidden] { display: none; }
+  .site-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .site-header .logos { display: flex; gap: 10px; }
+  .site-header img { width: 44px; height: 44px; border-radius: 50%; display: block; }
+</style>
+</head>
+<body>
+  <div class="site-header">
+    <div class="logos">
+      <img src="historiamvince-logo.png" alt="HISTORIAM VINCE" width="44" height="44">
+      <img src="mendelatech-chibi.png" alt="Mendelatech" width="44" height="44">
+    </div>
+    <select id="langSelect" aria-label="Language / Idioma">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+
+  <div id="en" class="lang-block" lang="en">
+    <h1>Privacy Policy — HISTORIAM VINCE</h1>
+    <p class="updated">Last updated: October 27, 2026</p>
+    <h2>No account, no personal data collection</h2>
+    <p>HISTORIAM VINCE is a single-player medieval grand strategy game that runs entirely on your device. It does not require an account, and it does not collect, sell, or share your personal information.</p>
+    <h2>Your games stay on your device</h2>
+    <p>Your saved games, unlocked achievements and chosen language are stored only in the app's private storage on your device. Nothing is uploaded to any server. Uninstalling the game, or clearing its data from Android's settings, deletes them. If you have turned on Android's own backup to your Google account, Android may include this game data in that personal backup so it can be restored on a new device; that backup is managed by Google under your account, and we have no access to it.</p>
+    <h2>No internet use</h2>
+    <p>The game works fully offline. It does not request internet access, so it cannot send or receive any data. The map, music and artwork are all bundled inside the app.</p>
+    <h2>Permissions used</h2>
+    <p>HISTORIAM VINCE does not use any special device permissions. No analytics, advertising, or tracking services are used.</p>
+    <h2>Legal notice</h2>
+    <p>HISTORIAM VINCE is a work of historical fiction set between 1210 and 1492. It portrays the wars, crusades, religions and politics of the period as part of the game; this does not imply any endorsement of the events, beliefs or attitudes it depicts.</p>
+    <h2>Contact</h2>
+    <p>Questions or requests regarding your data? Contact: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
+    <p><a href="licenses.html">Open source licenses</a></p>
+    <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Our links</a></p>
+    <footer>HISTORIAM VINCE — developed by Mendelatech</footer>
+  </div>
+
+  <div id="es" class="lang-block" lang="es" hidden>
+    <h1>Política de privacidad — HISTORIAM VINCE</h1>
+    <p class="updated">Última actualización: 27 de octubre de 2026</p>
+    <h2>Sin cuenta, sin recopilación de datos personales</h2>
+    <p>HISTORIAM VINCE es un juego de gran estrategia medieval para un jugador que funciona íntegramente en tu dispositivo. No requiere cuenta y no recopila, vende ni comparte tu información personal.</p>
+    <h2>Tus partidas se quedan en tu dispositivo</h2>
+    <p>Las partidas guardadas, los logros desbloqueados y el idioma elegido se guardan únicamente en el almacenamiento privado de la app en tu dispositivo. No se sube nada a ningún servidor. Al desinstalar el juego, o al borrar sus datos desde los ajustes de Android, se eliminan. Si tienes activada la copia de seguridad del propio Android en tu cuenta de Google, Android puede incluir estos datos del juego en esa copia personal para restaurarlos en un dispositivo nuevo; esa copia la gestiona Google en tu cuenta y nosotros no tenemos acceso a ella.</p>
+    <h2>Sin uso de internet</h2>
+    <p>El juego funciona completamente sin conexión. No solicita acceso a internet, así que no puede enviar ni recibir ningún dato. El mapa, la música y las ilustraciones van incluidos dentro de la app.</p>
+    <h2>Permisos utilizados</h2>
+    <p>HISTORIAM VINCE no utiliza ningún permiso especial del dispositivo. No se utilizan servicios de analítica, publicidad ni rastreo.</p>
+    <h2>Aviso legal</h2>
+    <p>HISTORIAM VINCE es una obra de ficción histórica ambientada entre 1210 y 1492. Representa las guerras, cruzadas, religiones y la política de la época como parte del juego; esto no implica respaldar los hechos, creencias o actitudes que muestra.</p>
+    <h2>Contacto</h2>
+    <p>¿Dudas o solicitudes sobre tus datos? Contacto: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
+    <p><a href="licenses.html">Licencias de código abierto</a></p>
+    <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Nuestros enlaces</a></p>
+    <footer>HISTORIAM VINCE — desarrollado por Mendelatech</footer>
+  </div>
+
+<script>
+(function () {
+  var supported = ["en","es"];
+  var select = document.getElementById("langSelect");
+
+  function normalize(tag) {
+    if (!tag) return null;
+    var base = tag.toLowerCase().split("-")[0];
+    return supported.indexOf(base) !== -1 ? base : null;
+  }
+
+  function show(code) {
+    supported.forEach(function (c) {
+      var el = document.getElementById(c);
+      if (el) el.hidden = (c !== code);
+    });
+    select.value = code;
+    document.documentElement.lang = code;
+  }
+
+  var browserMatch = null;
+  if (navigator.languages) {
+    for (var i = 0; i < navigator.languages.length && !browserMatch; i++) {
+      browserMatch = normalize(navigator.languages[i]);
+    }
+  }
+  if (!browserMatch) browserMatch = normalize(navigator.language);
+
+  show(browserMatch || "en");
+
+  select.addEventListener("change", function () {
+    show(select.value);
+  });
+})();
+</script>
+</body>
+</html>
